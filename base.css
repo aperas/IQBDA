@@ -9,7 +9,8 @@ padding: 1em;}
 
 #page-header {font-family: Georgia, Times, Serif; 
 font-style: italic;
-padding-top: 1em;}
+padding-top: 1em;
+position: relative;}
 
 #page-header h1 {font-size: 3em; font-weight: bold; display: inline-block; margin:0; vertical-align:middle;}
 
@@ -34,8 +35,24 @@ display: inline-block;}
   text-shadow: 2px 2px #333;
 }
 
-#page-header h2 {font-size:1.5em; font-weight: 500;}
+#page-header h2 {font: bolder italic 1.5em "Georgia", "Times", serif}
+
+#user-links {
+  position: absolute;
+  top: 10px;
+  right: 15px;
   
+}
+  
+#user-links a {
+  color: darkgreen;
+  text-decoration: none;
+}
+
+#user-links a:hover{
+text-decoration: underline;  
+}
+
 #page-header img {vertical-align:middle;}
 #content h2{
   font-family: Georgia, Times, Serif; font-size: 1.5em;font-weight: 500;}
@@ -47,3 +64,21 @@ display: inline-block;}
 #page-title h1 {font-family Georgia, Times, Serif; font-size: 1.8em; font-weight: bold;
   
 }
+
+#pageheader #user-links{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+input[type=radio] + label, input[type=checkbox] + label{
+  font-weight: normal;
+  display: inline;
+}
+
